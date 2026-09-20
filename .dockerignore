@@ -1,0 +1,43 @@
+# VCS
+.git/
+.gitignore
+.github/
+
+# Local virtual environments — must never overwrite the image's /app/.venv
+.venv/
+venv/
+env/
+
+# Python caches / build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Kubernetes manifests are applied from the host, not needed in the image
+manifests/
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+kubeconfig
+.kube/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
